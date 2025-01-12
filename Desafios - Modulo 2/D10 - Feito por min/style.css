@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Fonte Android';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('fontes/Oswald.ttf') format('truetype');
+}
+
+body {
+    margin: 0px;
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header { /* cabeçalho  */
+    background-image: linear-gradient(to bottom, #0fc05f, #03311f);
+    padding: 20px 40px;
+}
+
+header > #principal { /* titulo do cabeçalho  */
+    font: normal 500 2em 'Oswald', Times, serif;
+    color: #e9e9e9;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top: 0px;
+}
+
+header > p { /* paragrafos do cabeçalho */
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#menu { /* espaço para alocar links */
+    background-color: #03311f;
+    padding-bottom: 2px;
+}
+
+#menu > a { /* configurações dos links  */
+    text-decoration: none;
+    margin: 0px 30px 0px 0px;
+    color: whitesmoke;
+    font-weight: 400;
+}
+
+#menu > a:hover {/* configurações quando eu passo o mouse nos links */
+    text-decoration: underline;
+    color: #b26fa3;
+}
+
+#menu > a:active { /* quando eu clico no link  */
+    color: yellow
+}
+
+main#conteudo-cima { /* caixa onde tem o conteúdo principal  */
+    display: justify;
+    height: max-content;
+    width: 800px;
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 0px 8px 9px 2px black;
+}
+
+main > h1 {
+    font-family: 'Fonte Android', Times, serif;
+    color: #03311f;
+}
+
+span {
+    color:#03311f;
+    font-weight: bold;
+}
+
+.ancorado::after {
+    content: '🔗';
+}
+
+a { /* configurações dos links */
+    color:#03311f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#palavras { /* paragrafo do titulo principal do cabeçalho  */
+    text-align: center;
+    font-weight: 400;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.degrade { /* titulos com a classe degrade  */
+    font-family: 'Fonte Android', Times, serif;
+    color: #03311f;
+    background-image: linear-gradient(to right, #87e787, white);
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.container { /* espaço que contem a imagem  */
+    text-align: center;
+}
+
+#android {
+    width: 760px;
+    height: 450px;
+    background-color: green;
+    margin: auto;
+    padding: 15px 30px;
+    text-align: center;
+    box-shadow: 0px 8px 9px 2px black;
+}
+
+#conteudo-baixo { /* conteudo principal de baixo   */
+    height: 512px;
+    width: 800px;
+    margin: 0px auto 20px auto;
+    background-color: white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 8px 20px 0px black;
+}
+
+#conteudo-baixo {
+    padding: 10px;
+}
+
+.titulo {
+    display: block;
+    width: 800px;
+    height: 41px;
+    background-color: #0fc05f;
+    font: normal 400 24px Arial, Helvetica, sans-serif;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0px 1px 10px 0px black;
+}
+
+.titulo > h4 {
+    display: table-cell;
+    padding-top: 6px;
+    padding-left: 10px;
+    color: whitesmoke;
+}
+
+#texto {
+    display: inline-block;
+    width: 780px;
+    height: 365px;
+    background-color: #a7e5e7;
+    padding: 10px;
+    margin-top: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 1px 10px black
+}
+
+.versoes-android {
+    display: inline-block;
+    width: 250px;
+    margin-left: 0px;
+    margin-right: 120px;
+    padding: 0px;
+}
+
+li::before {
+    content: '✔ ';
+}
+
+.sublinhado {
+    text-decoration: underline;
+}
+
+#ultimotexto {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, #0fc05f, #03311f);
+    height: 30px;
+}
+
+footer > p {
+    color: whitesmoke;
+    text-align: center;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'Namorados';
+            src: url('fonts/Valentine.otf') format('opentype'), url('fonts/Valentine.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            /*
+                Tipos de Format()
+                    -opentype(OTF)
+                    -truetype(TTF)
+                    -embedded-opentype
+                    -truetype-aat(Apple Advanced Typography)
+                    -svg
+            */
+        }
+        @font-face {
+            font-family: 'Tatuagem';
+            src: url('fonts/AngillaTattoo.ttf') format('truetype');
+            font-weight: normal;
+            font-size: normal;
+        }
+
+        body {
+            font-family: 'Namorados', Times, serif;
+        }
+
+        h1 {
+            font-family: 'Namorados', Times, serif;
+            font-size: 2em;
+            font-weight: normal;
+        }
+
+        h2{
+            font-family: 'Tatuagem', Times, serif;
+            font-size: 2em;
+            font-weight: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Namorados</h1>
+    <p style="font-family: 'Namorados', Times, serif; font-weight: normal;">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto eius nostrum quibusdam dolores quisquam, architecto, quo corporis, aspernatur iure minus perferendis? Deleniti a consequuntur saepe facere ullam, labore blanditiis iure?
+    </p>
+    <h2>Tatuagem</h2>
+    <p style="font-family: 'Tatuagem', Times, serif">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut officia est fuga commodi tenetur quae quod, magni asperiores, ullam natus ipsam explicabo consectetur voluptates nostrum maiores dolores laboriosam quasi autem?
+    </p>
+</body>
+</html>

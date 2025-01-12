@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        
+        /*  Medidas Absolutas:
+            cm, mm, in(polegadas), px, pt, pc(paica);
+
+            
+            Medidas Relativas:
+            em, ex, rem, vw, vh, %;
+            
+            
+            Geralmente, 16px é o tamanho normal da fonte
+            16px = 1em
+            32px = 2em
+        */
+        }
+            /* 
+            
+            font-size: 1.2em;
+            
+            font-weight: 200;
+            
+            font-style: italic;
+            
+            light; normal; bold; bolder; 
+            
+            text-decoration: underline; 
+            
+            */
+        h1 {
+            background-color: aqua;
+        /* 
+        
+        shorthand font ( simplificando o estilo da fonte )
+        -> font-style: ; -> font-weight: ; -> font-size: ; -> font-family: ; 
+        
+        *É A MESMA COISA DE EU DIZER ISSO:
+        font-style: italic;
+        font-weight: bold;
+        font-size: 3em;
+        font-family: Arial, Helvetica, sans-serif;    
+
+        */  
+            font: italic bold 3em Arial, Helvetica, sans-serif;  
+        }
+
+        h2 {
+            font: bold normal 1.5em Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius excepturi cupiditate repellat commodi voluptatem animi sequi nemo atque. Aliquam dolorum, dolor pariatur deserunt cum rerum officia iure enim nulla animi? Lorem ipsum dolor sit amet consectetur adipisicing elit. At, incidunt explicabo sed voluptate ducimus distinctio corrupti consequatur enim expedita modi totam assumenda, deleniti inventore, quod minus provident! Vitae, nihil velit?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est enim doloribus recusandae quis debitis. Vero quaerat recusandae debitis molestiae earum eius nihil dicta voluptatum vitae. Ut non distinctio ex soluta.
+    </p>
+    <h2>Subtítulo do exercicio</h2>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, nisi, alias dolor cumque voluptate sapiente vero ad pariatur quaerat recusandae quia at dolorum et id nulla sint dignissimos vitae dolore.
+    </p>
+</body>
+</html>

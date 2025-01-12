@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="brasao-da-pm.ico" type="image/x-icon">
+    <title>Formatação de Textos</title>
+    <style>
+        mark {
+            background-color:limegreen
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>
+        Nessa frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt;(não semântica).<!--Simplesmente o formato em negrito-->
+           <!--atalho para Negrito: 1º: (CTRL + SHIFT + P) sobre a palavra; 2º digitar: abb; 3º: digitar b ou strong -->
+    </p> 
+    <p>
+        Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag <mark>&lt;strong&gt;(semântica).</mark><!--Na frase, alem do formato mudar para negrito, ela tbm passa a ter um significado-->
+    </p>
+    <h2>Itálico / Ênfase</h2>
+    <p>
+        Nesta frase, temos um <i>termo em itálico</i> usando a tag &lt;i&gt;(não semântica).<!--apenas a forma em negrito-->
+    </p>   
+    <!--atalho para Itálico: 1º: (CTRL + SHIFT + P) sobre a palavra; 2º digitar: abb; 3º: digitar i ou em -->
+    <p>
+        Nesta frase, temos um <em>termo em ênfase</em> usando a tag <mark>&lt;em&gt; (semântica).</mark><!--alem do formato mudar para itálico, a palavra passa a ter significado-->
+    </p>
+
+    <p>
+        A tag &lt;b&gt;, e a tag &lt;i&gt;, são tags da época do HTML4, ou seja, para representar formatos, as CSS já são responsáveis, tornando inviável, utilizar tags não semânticas para HTML5. Portanto, acostume-se a utilizar as tags <mark>&lt;strong&gt;</mark> para <strong>Negrito</strong> e <mark>&lt;em&gt;</mark> para <em>itálico</em>
+    </p>
+    <h2>Texto marcado</h2>
+    <p>
+        Podemos criar também <mark>um texto marcado</mark> usando a tag &lt;mark&gt;
+        <!--Não da para mudar a cor da marcação em HTML, porque isso é CSS-->
+    </p>
+    <p>
+        E no outro parágrafo, temos <mark>outro texto marcado</mark> no final.
+        <!--A cor da marcação é amarelo, que é a cor padrão-->
+    </p>
+    <p>
+         Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo.
+         <!--o <big> está obsoleto porque é uma tag que mexe com a forma das letras, isso quem faz é as CSS, ja o <small> não caiu, porque vc consegue dar sentido a letras pequenas; uma observação, por exemplo-->
+    </p>
+    <h2>Texto deletado</h2>
+    <p>
+        Podemos marcar <del>um texto como excluido</del> para indicar que ele deve ser lido, mas não considerado.
+    </p>
+    <h2>Texto inserido</h2>
+    <p>
+        Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.<!-- <ins> SEMÂNTICO </ins> -->
+    </p>
+    <p>
+        existe também o <u>sublinhado</u> com a tag &lt;u&gt; (não semântica).
+        <!--<u> mais foco na forma </u> ja é considerada obsoleta-->
+    </p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+    
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+    
+</body>
+</html>

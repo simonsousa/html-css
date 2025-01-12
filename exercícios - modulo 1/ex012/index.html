@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    
+    <video src="midia/meu-video-720p.mp4" width="560" controls></video><br>
+    <!--aparentemente videos com extensão OGV não funcionam no chrome-->
+    
+    <h3>Abaixo está outra forma de carregar videos</h3><br>
+    
+    <video width="560" poster="imagens/limoes-capa.png" controls autoplay loop><!--autoplay não está funcionando no chrome-->
+        <source src="midia/meu-video-720p.mp4" type="video/webm">
+        <source src="midia/meu-video-720p.webm" type="video/mp4">
+        <source src="midia/meu-video-720p.mkv" type="video/mp4">
+        <source src="midia/meu-video-720p.ogv" type="video/ogv">
+        <!--Caso nenhum desses sources seja compativel com o navegador, o site vai mostrar o parágrafo abaixo-->
+        <p>Seu navegador não tem compatibilidade com reprodução de videos.</p>
+    </video>
+
+    <h1>Inserindo vídeos do youtube</h1>
+    <p>Aqui, o usuário não está consumindo dados do seu servidor, ele está consumindo dados do Youtube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=kxa_QgypJ3HZxgtB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+    
+    <h1>Inserindo um vídeo do vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/29315013?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Animation Reel"></iframe>
+
+</body>
+</html>

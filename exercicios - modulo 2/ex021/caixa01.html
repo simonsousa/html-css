@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /* box-level */
+            
+            /*  posso alterar para display: inline; */
+
+            background-color: aqua; 
+            
+            /* height e width configuram o box sizing  */
+            height: 300px;
+            width: 300px;
+            
+            /* configura-se no sentido de um relogio, o box model */
+
+            border: 10px solid darkgray;
+
+            padding: 10px;
+
+            /* margin: auto; centraliza a caixa do título */
+            margin: 20px auto 40px auto; 
+            /* 
+            a margem direita e esquerda, é calculada automaticamente para ficar centralizada
+            */
+
+            outline: 5px dashed salmon;
+            
+        }
+        
+        a { /* inline-level */
+
+            /* posso alterar para display: block; */
+            
+            /* posso alterar para display: inline-block; */
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>parágrafos também são exemplos de box level, mas os <a href="#">links são exemplos de caixas inline-level.</a> Vamos ver como tudo isso funciona.</p>
+
+    <!-- display: block; é um elemento do tipo box-level -->
+    <!-- links são displays do tipo inline-block  -->
+</body>
+</html>

@@ -3,29 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
-            background-image: url('imagens/wallpaper002.jpg');
-            background-position: center top;
-            background-repeat: repeat-y;
-            background-size: cover;/*dá uma picotada nas partes que sobram, e deixa a imagem de fundo ocupando 100% da viewport*/
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover; /*so funciona fora da shorthand*/
+          /*
+          background-color: black;  
+          background-image: url('imagens/wallpaper002.jpg');
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover; dá uma picotada nas partes que sobram, e deixa a imagem de fundo ocupando 100% da viewport
+          background-attachment: fixed;
+          */
+
             /* 
             background-size: 100% 100%; altura e largura, respectivamente 
             background-size: contain;
             background-size: auto; o navegador se vira para regular o tamanho da imagem
             */
+
+            /* Shorthand - backgound 
+                color > image > position > repeat > [size] > attachment
+            */
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
-            border-radius: 10px;
+            border-radius: 15px;
         }
     </style>
 </head>
@@ -37,6 +47,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem saepe quasi deleniti, dolorum nulla tenetur deserunt nostrum et exercitationem nobis corrupti explicabo quis similique iste, quas minima reiciendis enim eum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat cumque enim deleniti iure harum fugit nisi assumenda, nulla obcaecati unde, repellendus nostrum consequatur placeat? Blanditiis architecto iste harum delectus magnam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nobis modi vel inventore sed illo, autem suscipit est earum fuga nam voluptatum repudiandae maxime asperiores rem sequi. At, corporis assumenda!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem saepe quasi deleniti, dolorum nulla tenetur deserunt nostrum et exercitationem nobis corrupti explicabo quis similique iste, quas minima reiciendis enim eum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat cumque enim deleniti iure harum fugit nisi assumenda, nulla obcaecati unde, repellendus nostrum consequatur placeat? Blanditiis architecto iste harum delectus magnam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nobis modi vel inventore sed illo, autem suscipit est earum fuga nam voluptatum repudiandae maxime asperiores rem sequi. At, corporis assumenda!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem saepe quasi deleniti, dolorum nulla tenetur deserunt nostrum et exercitationem nobis corrupti explicabo quis similique iste, quas minima reiciendis enim eum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat cumque enim deleniti iure harum fugit nisi assumenda, nulla obcaecati unde, repellendus nostrum consequatur placeat? Blanditiis architecto iste harum delectus magnam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nobis modi vel inventore sed illo, autem suscipit est earum fuga nam voluptatum repudiandae maxime asperiores rem sequi. At, corporis assumenda!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, vero modi? Nihil deserunt ex sunt nemo! Assumenda officiis repellat mollitia ipsa qui eius eos ad consectetur non, consequatur fugiat facere. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et fuga placeat eaque voluptates provident quia quo magnam laborum sint inventore? Quidem dolor explicabo illo totam temporibus quis? Ipsa, quisquam quibusdam.</p>
     </main>
 </body>
 </html>

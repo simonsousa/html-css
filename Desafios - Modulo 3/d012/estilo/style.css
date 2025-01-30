@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+    /* vh: view height (altura da minha viewport) */
+    /* vw: view width (largura da minha viewport) */ 
+
+html, body {
+    min-height: 100vh;/* ou 100% */ 
+    color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/*    text-transform: uppercase; transforma em MAIÚSCULO   */
+
+header h1 {
+    padding-top: 50px;
+    font-variant: small-caps; /*  deixa as letras maiúsculas, mas a primeira letra fica maior  */
+}
+
+header p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {/* link do cabeçalho e link do rodapé */
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;/* espaçamento duplo entre as frases*/
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: #726f6f;
+    color: white;
+}
+
+section.imagem > p {
+    background-color: #222121;
+    width: 400px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

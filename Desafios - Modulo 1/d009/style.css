@@ -9,6 +9,20 @@ h1 {
     color:white;
 }
 
+.cima, .baixo {
+    text-align: center;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+.link-baixo {
+    display: block;
+    text-align: center;
+}
+
 p {
     color:white;
 }

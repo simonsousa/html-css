@@ -13,8 +13,8 @@
 /* variáveis que tem as fontes */
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif; /* fonte padrão  */
-    --fonte2: 'Passion One', serif;/* fonte que vou suar em títulos  */
-    --fonte3: 'Sriracha', serif;/* conteúdo */
+    --fonte2: 'Passion One', serif;/* fonte que vou usar em títulos  */
+    --fonte3: 'Sriracha', serif;/* fonte para conteúdo */
 }
 
 * {
@@ -60,17 +60,25 @@ header a, footer a {/* link do cabeçalho e link do rodapé */
 }
 
 header a:hover, footer a:hover {
-    text-decoration: underline;
+    background-color: #7c6666;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+    padding: 2.5px;
 }
 
 section {
-    padding-top: 10vh;
+    padding-top: 10vh; /*vao ocupar 10% da altura*/
     padding-bottom: 10vh;
     line-height: 2em;/* espaçamento duplo entre as frases*/
     padding-left: 30px;
     font-family: var(--fonte3);
     font-size: 3.5vw; /* todas as letras vão ocupar 4.5% da largura da view port, regulando-se automaticamente conforme vou aumentando ou diminuindo a largura da tela*/
 }
+
+section > p {
+    padding-bottom: 2em;
+} 
+
 
 section.normal {
     background-color: white;
@@ -80,12 +88,25 @@ section.normal {
 section.imagem {
     background-color: #726f6f;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px #00000075;
+    background-size: cover;
+    background-attachment: fixed;/*efeito parallax*/
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: #222121;
+    background-color: #2b2727ad;
+    text-shadow: 1px 1px 0px;
+}
+
+#img001 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+#img002 {
+    background-image: url('../imagens/background002.jpg');
 }
 
 footer {

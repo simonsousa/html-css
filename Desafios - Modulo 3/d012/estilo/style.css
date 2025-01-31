@@ -1,8 +1,26 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Passion One';
+    src: url('../Passion_One/PassionOne-Black.ttf') format('truetype'), url('../Passion_One/PassionOne-Bold.ttf') format('truetype'), url('../Passion_One/PassionOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url('../Sriracha/Sriracha-Regular.ttf') format('truetype');
+}
+
+/* variáveis que tem as fontes */
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif; /* fonte padrão  */
+    --fonte2: 'Passion One', serif;/* fonte que vou suar em títulos  */
+    --fonte3: 'Sriracha', serif;/* conteúdo */
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
     /* vh: view height (altura da minha viewport) */
@@ -11,6 +29,7 @@
 html, body {
     min-height: 100vh;/* ou 100% */ 
     color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -21,9 +40,13 @@ header {
 
 /*    text-transform: uppercase; transforma em MAIÚSCULO   */
 
+/* font-variant: small-caps;  deixa as letras maiúsculas, mas a primeira letra fica maior  */
+
 header h1 {
     padding-top: 50px;
-    font-variant: small-caps; /*  deixa as letras maiúsculas, mas a primeira letra fica maior  */
+    font-variant: small-caps;
+    font-family: var(--fonte2); 
+    font-size: 10vw;/*10% da largura da tela*/
 }
 
 header p {
@@ -45,6 +68,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;/* espaçamento duplo entre as frases*/
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw; /* todas as letras vão ocupar 4.5% da largura da view port, regulando-se automaticamente conforme vou aumentando ou diminuindo a largura da tela*/
 }
 
 section.normal {
@@ -58,8 +83,9 @@ section.imagem {
 }
 
 section.imagem > p {
+    display: inline-block;
+    padding: 5px;
     background-color: #222121;
-    width: 400px;
 }
 
 footer {

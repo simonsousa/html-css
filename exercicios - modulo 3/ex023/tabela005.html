@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 8px;
+            border: 1px solid black;
+            background-color: lightgray;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .destaque {
+            background-color: greenyellow;
+        }
+
+        .c-nome {
+            background-color: #09ff00;
+        }
+        
+        .c-grupo {
+            background-color: yellow;
+        } 
+
+        .amarelo {
+            background-color: yellow;
+        }
+        
+        .vermelho {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+            <colgroup> <!--para isso que serve o escopo em cada <th>-->
+                <!-- 
+                <col class="c-nome">
+                <col class="c-grupo" span="3"> 
+                -->
+                <col class="amarelo">
+                <col class="vermelho" span="2">
+                <col class="amarelo">
+
+            </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalismo</td>
+        </tr>
+        <tr>
+            <td>Cláudio</td>
+            <td>H</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>H</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>H</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>35</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td class="destaque">Ingrid</td>
+            <td>F</td>
+            <td>21</td>
+            <td>Engenharia</td>
+        </tr>
+    </table>
+</body>
+</html>
